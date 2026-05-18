@@ -1,0 +1,29 @@
+# Maven build output
+/backend/target/
+/backend/*.log
+**/*.class
+
+# Node modules and build output
+/node_modules/
+/frontend/node_modules/
+/frontend/dist/
+/frontend/out-tsc/
+/frontend/.angular/cache/
+/frontend/npm-debug.log
+/frontend/yarn-error.log
+
+# IDE files
+/.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
+*.swp
