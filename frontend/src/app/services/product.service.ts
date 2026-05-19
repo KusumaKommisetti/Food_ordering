@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
- 
+
 @Injectable({ providedIn: 'root' })
 export class ProductService {
   private api = 'http://localhost:9090/api/products';
   constructor(private http: HttpClient) {}
- 
+
   getProducts(category?: string, sort: string = 'asc'): Observable<any[]> {
     let url = `${this.api}?sort=${sort}`;
     if (category) url += `&category=${category}`;
